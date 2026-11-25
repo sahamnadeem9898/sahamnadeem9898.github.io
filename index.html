@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Muhammad Saham Nadeem, Staff Software Engineer</title>
+<meta name="description" content="Staff Software Engineer building production AI and high-scale backend systems. 8+ years, remote from Islamabad with US and EU overlap.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fbfbfa; --surface:#ffffff; --ink:#14171c; --muted:#5b6472; --line:#e6e8ec;
+  --accent:#1f4fd6; --accent-soft:#eef2fd; --good:#0f7a55;
+}
+@media (prefers-color-scheme: dark){
+  :root{--bg:#0e1116; --surface:#151a21; --ink:#e8ebf0; --muted:#9aa4b2; --line:#252c36; --accent:#7ea2ff; --accent-soft:#1a2340; --good:#4fd1a0;}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+header.top{padding:72px 0 40px;border-bottom:1px solid var(--line)}
+.eyebrow{font:500 13px/1 "JetBrains Mono",monospace;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+h1{font-size:clamp(32px,5vw,48px);line-height:1.1;margin:14px 0 10px;letter-spacing:-.02em}
+.role{font-size:clamp(17px,2.2vw,20px);color:var(--muted);margin:0 0 22px}
+.pitch{font-size:18px;max-width:680px;margin:0 0 26px}
+.loc{color:var(--muted);font-size:15px;margin-bottom:26px}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--ink);font-weight:500;font-size:15px}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn:hover{text-decoration:none;border-color:var(--accent)}
+section{padding:56px 0;border-bottom:1px solid var(--line)}
+h2{font-size:13px;font-family:"JetBrains Mono",monospace;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 24px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px}
+.stat b{display:block;font-size:21px;white-space:nowrap;letter-spacing:-.01em;margin-bottom:4px}
+.stat span{color:var(--muted);font-size:14px;line-height:1.4;display:block}
+.case{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:26px;margin-bottom:18px}
+.case h3{margin:0 0 4px;font-size:21px;letter-spacing:-.01em}
+.case .ctx{color:var(--muted);font-size:14px;margin-bottom:16px}
+.case dl{display:grid;grid-template-columns:120px 1fr;gap:10px 18px;margin:0}
+.case dt{font-weight:600;font-size:14px;color:var(--muted);padding-top:2px}
+.case dd{margin:0}
+.result{color:var(--good);font-weight:600}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px}
+.tag{font:500 12px/1 "JetBrains Mono",monospace;background:var(--accent-soft);color:var(--accent);padding:6px 9px;border-radius:6px}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px}
+.card h4{margin:0 0 6px;font-size:16px}
+.card p{margin:0;color:var(--muted);font-size:15px}
+.timeline{list-style:none;margin:0;padding:0}
+.timeline li{display:grid;grid-template-columns:170px 1fr;gap:18px;padding:14px 0;border-top:1px solid var(--line)}
+.timeline li:first-child{border-top:0}
+.timeline .when{color:var(--muted);font-size:14px;padding-top:2px}
+.timeline b{display:block}
+.timeline span{color:var(--muted);font-size:15px}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px 28px}
+.skills h4{margin:0 0 6px;font-size:15px}
+.skills p{margin:0;color:var(--muted);font-size:15px}
+.how{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+.award{display:flex;gap:14px;align-items:flex-start;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px;margin-top:14px}
+.award .dot{width:10px;height:10px;border-radius:50%;background:var(--good);margin-top:8px;flex:none}
+.diagram{margin:20px 0 4px}
+.dscroll{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--bg);padding:6px 0}
+.diagram svg{display:block;width:100%;min-width:800px;height:auto}
+.diagram figcaption{font-size:13px;color:var(--muted);margin-top:8px}
+.diagram .n{fill:var(--surface);stroke:var(--line);stroke-width:1.5}
+.diagram .hi{fill:var(--accent-soft);stroke:var(--accent)}
+.diagram .band{fill:var(--accent-soft)}
+.diagram text{text-anchor:middle;font-family:Inter,system-ui,sans-serif}
+.diagram .t1{font-size:15px;font-weight:600;fill:var(--ink)}
+.diagram .t2{font-size:12px;fill:var(--muted)}
+.diagram .b{fill:var(--accent);font-weight:600;font-size:12.5px}
+.diagram .a{stroke:var(--muted);stroke-width:1.6;fill:none}
+.diagram .dash{stroke-dasharray:4 4}
+.diagram .ahp{fill:var(--muted)}
+.slot[hidden]{display:none}
+.video{position:relative;padding-top:56.25%;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#000}
+.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.quote{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px}
+.quote p{margin:0 0 12px;font-size:17px;color:var(--ink)}
+.quote span{color:var(--muted);font-size:14px}
+.repo{display:block;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px;color:var(--ink)}
+.repo:hover{text-decoration:none;border-color:var(--accent)}
+.repo b{font-family:"JetBrains Mono",monospace;font-size:15px;color:var(--accent)}
+.repo p{margin:6px 0 0;color:var(--muted);font-size:15px}
+footer{padding:56px 0 72px}
+footer p{color:var(--muted)}
+@media (max-width:640px){
+  header.top{padding:48px 0 32px}
+  .case dl{grid-template-columns:1fr;gap:4px}
+  .case dt{margin-top:8px}
+  .timeline li{grid-template-columns:1fr;gap:2px}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <div class="eyebrow">Portfolio</div>
+    <h1>Muhammad Saham Nadeem</h1>
+    <p class="role">Staff Software Engineer · AI/ML Systems, Backend and Cloud Architecture</p>
+    <p class="pitch">I build production AI and high-scale backend systems, end to end. From Kafka event pipelines and fine-tuned models to the APIs and product UI that put them in front of users. 8+ years, currently leading architecture for a US enterprise FinTech client.</p>
+    <p class="loc">Islamabad, Pakistan · Remote, with daily overlap with US and EU hours · Available to start immediately</p>
+    <div class="btns">
+      <a class="btn primary" href="mailto:saham.nadeem9898@gmail.com">Email me</a>
+      <a class="btn" href="https://www.linkedin.com/in/sahamnadeem">LinkedIn</a>
+      <a class="btn" href="https://github.com/sahamnadeem9898">GitHub</a>
+      <a class="btn" href="Resume_Muhammad_Saham_Nadeem.pdf">Download resume</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>Results in production</h2>
+    <div class="stats">
+      <div class="stat"><b>5k–10k/sec</b><span>events processed at 100–200 ms p95 on a platform I architected</span></div>
+      <div class="stat"><b>+20–30%</b><span>document extraction accuracy from fine-tuned vision and NLP models</span></div>
+      <div class="stat"><b>2 wks → 2–3 days</b><span>model release time after I built the MLOps pipeline</span></div>
+      <div class="stat"><b>−25–40%</b><span>inference cost through quantization, batching and GPU autoscaling</span></div>
+      <div class="stat"><b>−20–30%</b><span>cloud spend through rightsizing and spot and reserved capacity</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="slot" id="intro" hidden>
+  <div class="wrap">
+    <h2>A quick intro</h2>
+    <div class="video" id="videoBox"></div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <h2>Selected work</h2>
+
+    <article class="case">
+      <h3>Real-time event platform for a US FinTech</h3>
+      <div class="ctx">10Pearls · Staff Software Engineer · 2024 to present · client name under NDA</div>
+      <dl>
+        <dt>Problem</dt><dd>The product needed to ingest and react to high volumes of financial events in real time, with multiple customer accounts sharing one platform and strict data separation.</dd>
+        <dt>What I built</dt><dd>An event-driven microservices platform in Python and Node.js on Kafka, AWS Kinesis and Redis, with REST, GraphQL and WebSocket APIs on top. I designed the tenant model, the service layer and the API layer every customer-facing feature goes through, plus multi-region high availability with disaster recovery and least-privilege IAM.</dd>
+        <dt>Result</dt><dd class="result">5,000–10,000 events/sec at 100–200 ms p95, and 20–30% lower cloud spend.</dd>
+      </dl>
+      <figure class="diagram" aria-label="Simplified architecture, real-time event platform"><div class="dscroll"><svg viewBox="0 0 1000 160" role="img"><title>Simplified architecture, real-time event platform</title><defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" class="ahp"/></marker></defs><rect class="n" x="20.0" y="30" width="138.33333333333334" height="64" rx="10"/><text class="t1" x="89.16666666666667" y="58.0">Event sources</text><text class="t2" x="89.16666666666667" y="76.0">payments, accounts</text><path class="a" d="M161.33333333333334 62.0 L180.33333333333334 62.0" marker-end="url(#ah)"/><rect class="n" x="184.33333333333334" y="30" width="138.33333333333334" height="64" rx="10"/><text class="t1" x="253.5" y="58.0">Kafka · Kinesis</text><text class="t2" x="253.5" y="76.0">streaming ingest</text><path class="a" d="M325.6666666666667 62.0 L344.6666666666667 62.0" marker-end="url(#ah)"/><rect class="n" x="348.6666666666667" y="30" width="138.33333333333334" height="64" rx="10"/><text class="t1" x="417.83333333333337" y="58.0">Microservices</text><text class="t2" x="417.83333333333337" y="76.0">Python · Node.js</text><path class="a" d="M490.0 62.0 L509.0 62.0" marker-end="url(#ah)"/><rect class="n" x="513.0" y="30" width="138.33333333333334" height="64" rx="10"/><text class="t1" x="582.1666666666666" y="58.0">Redis + Postgres</text><text class="t2" x="582.1666666666666" y="76.0">cache and state</text><path class="a" d="M654.3333333333334 62.0 L673.3333333333334 62.0" marker-end="url(#ah)"/><rect class="n" x="677.3333333333334" y="30" width="138.33333333333334" height="64" rx="10"/><text class="t1" x="746.5" y="58.0">API layer</text><text class="t2" x="746.5" y="76.0">REST · GraphQL · WS</text><path class="a" d="M818.6666666666667 62.0 L837.6666666666667 62.0" marker-end="url(#ah)"/><rect class="n" x="841.6666666666667" y="30" width="138.33333333333334" height="64" rx="10"/><text class="t1" x="910.8333333333334" y="58.0">Customer apps</text><text class="t2" x="910.8333333333334" y="76.0">web and partners</text><rect class="band" x="20" y="112" width="960" height="34" rx="8"/><text class="t2 b" x="500.0" y="134">Multi-region high availability · disaster recovery · least-privilege IAM</text></svg></div><figcaption>Simplified architecture, real-time event platform</figcaption></figure>
+      <div class="tags"><span class="tag">Kafka</span><span class="tag">Kinesis</span><span class="tag">Redis</span><span class="tag">PostgreSQL</span><span class="tag">Python</span><span class="tag">Node.js</span><span class="tag">GraphQL</span><span class="tag">AWS</span></div>
+    </article>
+
+    <article class="case">
+      <h3>Document intelligence and LLM features</h3>
+      <div class="ctx">10Pearls · same FinTech client</div>
+      <dl>
+        <dt>Problem</dt><dd>Operations teams were reading and keying data from large volumes of documents by hand, and the product needed reliable AI features rather than demos.</dd>
+        <dt>What I built</dt><dd>Fine-tuned computer vision and NLP models in PyTorch and TensorFlow for classification, object detection and OCR extraction. On top of that, LLM features using RAG, vector search and agentic workflows with Model Context Protocol (MCP) tool integrations, backed by evaluation pipelines that track accuracy, hallucination and latency before anything ships.</dd>
+        <dt>Result</dt><dd class="result">20–30% higher extraction accuracy, with every AI release gated by automated evaluation.</dd>
+      </dl>
+      <figure class="diagram" aria-label="Simplified architecture, document intelligence and LLM features"><div class="dscroll"><svg viewBox="0 0 1000 160" role="img"><title>Simplified architecture, document intelligence and LLM features</title><defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" class="ahp"/></marker></defs><rect class="n" x="20.0" y="30" width="138.33333333333334" height="64" rx="10"/><text class="t1" x="89.16666666666667" y="58.0">Documents</text><text class="t2" x="89.16666666666667" y="76.0">scans · PDFs · forms</text><path class="a" d="M161.33333333333334 62.0 L180.33333333333334 62.0" marker-end="url(#ah)"/><rect class="n" x="184.33333333333334" y="30" width="138.33333333333334" height="64" rx="10"/><text class="t1" x="253.5" y="58.0">Vision models</text><text class="t2" x="253.5" y="76.0">detect · classify · OCR</text><path class="a" d="M325.6666666666667 62.0 L344.6666666666667 62.0" marker-end="url(#ah)"/><rect class="n" x="348.6666666666667" y="30" width="138.33333333333334" height="64" rx="10"/><text class="t1" x="417.83333333333337" y="58.0">Structured data</text><text class="t2" x="417.83333333333337" y="76.0">extracted fields</text><path class="a" d="M490.0 62.0 L509.0 62.0" marker-end="url(#ah)"/><rect class="n" x="513.0" y="30" width="138.33333333333334" height="64" rx="10"/><text class="t1" x="582.1666666666666" y="58.0">Embeddings</text><text class="t2" x="582.1666666666666" y="76.0">vector search</text><path class="a" d="M654.3333333333334 62.0 L673.3333333333334 62.0" marker-end="url(#ah)"/><rect class="n" x="677.3333333333334" y="30" width="138.33333333333334" height="64" rx="10"/><text class="t1" x="746.5" y="58.0">RAG and agents</text><text class="t2" x="746.5" y="76.0">MCP tool integrations</text><path class="a" d="M818.6666666666667 62.0 L837.6666666666667 62.0" marker-end="url(#ah)"/><rect class="n" x="841.6666666666667" y="30" width="138.33333333333334" height="64" rx="10"/><text class="t1" x="910.8333333333334" y="58.0">Product features</text><text class="t2" x="910.8333333333334" y="76.0">in the customer app</text><rect class="band" x="20" y="112" width="960" height="34" rx="8"/><text class="t2 b" x="500.0" y="134">Evaluation gate on every release · accuracy · hallucination · latency</text></svg></div><figcaption>Simplified architecture, document intelligence and LLM features</figcaption></figure>
+      <div class="tags"><span class="tag">PyTorch</span><span class="tag">TensorFlow</span><span class="tag">OCR</span><span class="tag">RAG</span><span class="tag">Agents</span><span class="tag">MCP</span><span class="tag">LLM evals</span></div>
+    </article>
+
+    <article class="case">
+      <h3>MLOps pipeline and inference cost</h3>
+      <div class="ctx">10Pearls · same FinTech client</div>
+      <dl>
+        <dt>Problem</dt><dd>Shipping a new model took two weeks of manual steps, and inference costs were growing with usage.</dd>
+        <dt>What I built</dt><dd>End-to-end MLOps covering data versioning, experiment tracking, a model registry, automated retraining, canary releases and drift monitoring. For serving, I added quantization, request batching and GPU autoscaling on containerized infrastructure.</dd>
+        <dt>Result</dt><dd class="result">Model releases cut from 2 weeks to 2–3 days, and inference cost down 25–40%.</dd>
+      </dl>
+      <figure class="diagram" aria-label="Simplified architecture, MLOps pipeline"><div class="dscroll"><svg viewBox="0 0 1000 150" role="img"><title>Simplified architecture, MLOps pipeline</title><defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" class="ahp"/></marker></defs><rect class="n" x="20.0" y="30" width="138.33333333333334" height="64" rx="10"/><text class="t1" x="89.16666666666667" y="58.0">Data versioning</text><text class="t2" x="89.16666666666667" y="76.0">exact datasets</text><path class="a" d="M161.33333333333334 62.0 L180.33333333333334 62.0" marker-end="url(#ah)"/><rect class="n" x="184.33333333333334" y="30" width="138.33333333333334" height="64" rx="10"/><text class="t1" x="253.5" y="58.0">Experiments</text><text class="t2" x="253.5" y="76.0">tracked runs</text><path class="a" d="M325.6666666666667 62.0 L344.6666666666667 62.0" marker-end="url(#ah)"/><rect class="n" x="348.6666666666667" y="30" width="138.33333333333334" height="64" rx="10"/><text class="t1" x="417.83333333333337" y="58.0">Model registry</text><text class="t2" x="417.83333333333337" y="76.0">approved versions</text><path class="a" d="M490.0 62.0 L509.0 62.0" marker-end="url(#ah)"/><rect class="n" x="513.0" y="30" width="138.33333333333334" height="64" rx="10"/><text class="t1" x="582.1666666666666" y="58.0">Canary release</text><text class="t2" x="582.1666666666666" y="76.0">small slice first</text><path class="a" d="M654.3333333333334 62.0 L673.3333333333334 62.0" marker-end="url(#ah)"/><rect class="n" x="677.3333333333334" y="30" width="138.33333333333334" height="64" rx="10"/><text class="t1" x="746.5" y="58.0">Fast serving</text><text class="t2" x="746.5" y="76.0">quantized · batched</text><path class="a" d="M818.6666666666667 62.0 L837.6666666666667 62.0" marker-end="url(#ah)"/><rect class="n" x="841.6666666666667" y="30" width="138.33333333333334" height="64" rx="10"/><text class="t1" x="910.8333333333334" y="58.0">Drift monitoring</text><text class="t2" x="910.8333333333334" y="76.0">live quality checks</text><path class="a dash" d="M910.8333333333334 96 L910.8333333333334 124 L89.16666666666667 124 L89.16666666666667 100" marker-end="url(#ah)"/><text class="t2" x="500.0" y="140">drift triggers automated retraining</text></svg></div><figcaption>Simplified architecture, MLOps pipeline</figcaption></figure>
+      <div class="tags"><span class="tag">MLflow</span><span class="tag">Kubeflow</span><span class="tag">ONNX</span><span class="tag">Kubernetes</span><span class="tag">GPU serving</span><span class="tag">SageMaker</span></div>
+    </article>
+
+    <div class="grid2">
+      <div class="card"><h4>AI computer vision product</h4><p>Darvis Inc. Python microservices and Vue.js apps with message queues and real-time notifications, deployed on Docker and Kubernetes.</p></div>
+      <div class="card"><h4>Multi-cloud product architecture</h4><p>TEO International. Owned architecture for several full-stack products on AWS EKS and Azure AKS, with logging, tracing and CI/CD that cut deployment failures.</p></div>
+      <div class="card"><h4>Fully remote for an Australian client</h4><p>Global Kinetics. Scalable systems in Node.js, Spring Boot, React and Angular, plus custom Python ranking engines for SEO and content analysis.</p></div>
+      <div class="card"><h4>Team lead and hiring</h4><p>Talkmaze. Built Laravel backends and Vue.js PWAs, led delivery and client communication, and designed the engineering hiring process.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="slot" id="code" hidden>
+  <div class="wrap">
+    <h2>Code you can read</h2>
+    <div class="grid2" id="repoList"></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>How I work</h2>
+    <div class="how">
+      <div class="card"><h4>Written first</h4><p>Short design docs before building, detailed PR descriptions and written progress, so teams in other time zones never wait on a call.</p></div>
+      <div class="card"><h4>Own it end to end</h4><p>From architecture and data model to deployment, monitoring and on-call. I care about what happens after the code ships.</p></div>
+      <div class="card"><h4>Bring the team along</h4><p>I set architecture standards, review for AI robustness and safety, and have trained engineering teams on LLM design and prompt engineering.</p></div>
+    </div>
+    <div class="award"><div class="dot"></div><div><b>Employee of the Year 2025, 10Pearls</b><br><span style="color:var(--muted)">Recognised for outstanding performance and awarded a car.</span></div></div>
+  </div>
+</section>
+
+<section class="slot" id="words" hidden>
+  <div class="wrap">
+    <h2>What people say</h2>
+    <div class="grid2" id="quoteList"></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Experience</h2>
+    <ul class="timeline">
+      <li><div class="when">Jul 2024 – Present</div><div><b>Staff Software Engineer, AI/ML and Cloud Architecture · 10Pearls</b><span>Lead engineer for a US enterprise FinTech client</span></div></li>
+      <li><div class="when">Dec 2023 – Jul 2024</div><div><b>Associate Principal Software Engineer · TEO International</b><span>Architecture for multiple full-stack products on AWS and Azure</span></div></li>
+      <li><div class="when">Jul 2023 – Dec 2023</div><div><b>Senior Software Engineer · Darvis Inc</b><span>AI computer vision product, Python and Kubernetes</span></div></li>
+      <li><div class="when">Feb 2022 – Jul 2023</div><div><b>Senior Software Engineer · Global Kinetics (via Discretelogix)</b><span>Melbourne, Australia, fully remote</span></div></li>
+      <li><div class="when">Jul 2019 – Feb 2022</div><div><b>Web Developer and IT Team Lead · Talkmaze</b><span>Backends, PWAs, delivery and hiring</span></div></li>
+      <li><div class="when">Apr 2018 – May 2019</div><div><b>Web Developer · Captra Interface</b><span>Web applications and REST APIs</span></div></li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div><h4>AI and ML</h4><p>PyTorch, TensorFlow, Hugging Face, scikit-learn, computer vision (YOLO, OpenCV, OCR), NLP, LLM fine-tuning (LoRA, QLoRA)</p></div>
+      <div><h4>Generative AI</h4><p>RAG, embeddings and vector databases, LangChain, agentic workflows, MCP, prompt engineering, LLM evaluation</p></div>
+      <div><h4>MLOps</h4><p>MLflow, Kubeflow, model registry, drift monitoring, quantization, ONNX, GPU inference, SageMaker, Vertex AI, Bedrock</p></div>
+      <div><h4>Backend</h4><p>Python (FastAPI, Django), Node.js, TypeScript, Java (Spring Boot), PHP (Laravel), REST, GraphQL, gRPC, WebSockets</p></div>
+      <div><h4>Data and streaming</h4><p>Kafka, Kinesis, Redis, PostgreSQL, MongoDB, DynamoDB, ETL pipelines</p></div>
+      <div><h4>Cloud and DevOps</h4><p>AWS, GCP, Azure, Kubernetes, Docker, Terraform, Helm, GitHub Actions, observability</p></div>
+      <div><h4>Frontend</h4><p>React, Next.js, Vue.js, Angular, micro-frontends, Tailwind CSS</p></div>
+      <div><h4>Education</h4><p>M.S. Data Science, Bahria University (GPA 3.8/4.0) · B.S. Software Engineering, Abasyn University</p></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <h2>Let's talk</h2>
+    <p style="font-size:18px;color:var(--ink);max-width:620px">I'm looking for a remote role where I can own AI and backend systems end to end. If that sounds like your team, I'd love to hear from you.</p>
+    <div class="btns">
+      <a class="btn primary" href="mailto:saham.nadeem9898@gmail.com">saham.nadeem9898@gmail.com</a>
+      <a class="btn" href="https://www.linkedin.com/in/sahamnadeem">LinkedIn</a>
+      <a class="btn" href="https://github.com/sahamnadeem9898">GitHub</a>
+      <a class="btn" href="Resume_Muhammad_Saham_Nadeem.pdf">Resume (PDF)</a>
+    </div>
+    <p style="margin-top:28px;font-size:14px">+92 333 1424188 · Islamabad, Pakistan</p>
+  </div>
+</footer>
+
+<script>
+/* ===== EDIT ONLY THIS PART. Each section appears on the page as soon as it has content. ===== */
+const VIDEO_URL = "";   // YouTube or Loom link to Saham's intro video
+const REPOS = [
+  // { name: "rag-eval-pipeline", url: "https://github.com/sahamnadeem9898/rag-eval-pipeline", about: "One line on what it shows" },
+];
+const QUOTES = [
+  // { text: "Exact words from a real LinkedIn recommendation", who: "Full Name, Title at Company" },
+];
+/* ============================================================================================ */
+(function(){
+  function esc(s){return String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));}
+  function embed(u){
+    let m=u.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/|shorts\/))([\w-]{6,})/);
+    if(m) return "https://www.youtube-nocookie.com/embed/"+m[1];
+    m=u.match(/loom\.com\/(?:share|embed)\/([\w-]+)/);
+    if(m) return "https://www.loom.com/embed/"+m[1];
+    return null;
+  }
+  if(VIDEO_URL){const e=embed(VIDEO_URL);if(e){document.getElementById("videoBox").innerHTML='<iframe src="'+esc(e)+'" title="Intro video" allowfullscreen loading="lazy"></iframe>';document.getElementById("intro").hidden=false;}}
+  if(REPOS.length){document.getElementById("repoList").innerHTML=REPOS.map(r=>'<a class="repo" href="'+esc(r.url)+'"><b>'+esc(r.name)+'</b><p>'+esc(r.about||"")+'</p></a>').join("");document.getElementById("code").hidden=false;}
+  if(QUOTES.length){document.getElementById("quoteList").innerHTML=QUOTES.map(q=>'<div class="quote"><p>“'+esc(q.text)+'”</p><span>'+esc(q.who)+'</span></div>').join("");document.getElementById("words").hidden=false;}
+})();
+</script>
+</body>
+</html>
